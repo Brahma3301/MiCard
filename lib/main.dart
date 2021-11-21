@@ -56,7 +56,7 @@ class MiCard extends StatelessWidget {
                     Icons.phone,
                     color: Colors.red,
                   ),
-                  title: Text('701781XXXX',style: TextStyle(fontFamily: 'sourcesanspro',fontSize: 20,color: Colors.red),),
+                  title: Text('701781XXXX',style: TextStyle(fontFamily: 'sourcesanspro',fontSize: 21,color: Colors.red),),
                 ),
               ),
               Card(
@@ -68,7 +68,7 @@ class MiCard extends StatelessWidget {
                     Icons.email,
                     color: Colors.red,
                   ),
-                  title: Text('vagun.babbar@gmail.com',style: TextStyle(fontFamily: 'sourcesanspro',fontSize: 20,color: Colors.red),),
+                  title: Text('vagun.babbar@gmail.com',style: TextStyle(fontFamily: 'sourcesanspro',fontSize: 21,color: Colors.red),),
                 ),
               ),
             ],
