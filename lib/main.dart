@@ -17,12 +17,12 @@ class MiCard extends StatelessWidget {
         body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              const CircleAvatar(
+            children: const <Widget>[
+              CircleAvatar(
                 radius: 60,
                 backgroundImage: AssetImage('images/3301.jpg'),
               ),
-              const Text(
+              Text(
                 'Vagun Babbar',
                 style: TextStyle(
                     fontSize: 40,
@@ -30,7 +30,7 @@ class MiCard extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     fontFamily: 'pacifico'),
               ),
-              const Text(
+              Text(
                 'Flutter Developer',
                 style: TextStyle(
                   fontSize: 20,
@@ -40,50 +40,37 @@ class MiCard extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
-              Container(
-                padding: const EdgeInsets.all(10),
-                color: Colors.white,
-                margin:
-                    const EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-                child: Row(
-                  children: const <Widget>[
-                    Icon(
-                      Icons.phone,
-                      color: Colors.red,
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      '7017XXXXXX',
-                      style:
-                          TextStyle(fontSize: 20, fontFamily: 'sourcesanspro',color: Colors.red),
-                    )
-                  ],
+              SizedBox(
+                height: 20,
+                width: 150,
+                child: Divider(
+                  color: Colors.white,
                 ),
               ),
-              Container(
-                padding: const EdgeInsets.all(10),
+              Card(
                 color: Colors.white,
                 margin:
-                    const EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-                child: Row(
-                  children: const <Widget>[
-                    Icon(
-                      Icons.email,
-                      color: Colors.red,
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      'vagun.babbar@gmail.com',
-                      style:
-                          TextStyle(fontSize: 20, fontFamily: 'sourcesanspro',color: Colors.red),
-                    )
-                  ],
+                    EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.red,
+                  ),
+                  title: Text('701781XXXX',style: TextStyle(fontFamily: 'sourcesanspro',fontSize: 20,color: Colors.red),),
                 ),
-              )
+              ),
+              Card(
+                color: Colors.white,
+                margin:
+                    EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.red,
+                  ),
+                  title: Text('vagun.babbar@gmail.com',style: TextStyle(fontFamily: 'sourcesanspro',fontSize: 20,color: Colors.red),),
+                ),
+              ),
             ],
           ),
         ),
